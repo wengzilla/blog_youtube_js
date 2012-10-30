@@ -3,12 +3,12 @@ html
   head
     title YouTube Player API Tutorial
     = stylesheet_link_tag    "application", :media => "all"
+    script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"
     = javascript_include_tag "application", "http://www.google.com/jsapi"
     = csrf_meta_tags
-    = render partial: "layouts/js"
+
   body
 
     div class="container" id="main_content"
       div class="row"
         = yield
-        #videoDiv
